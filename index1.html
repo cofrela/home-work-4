@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task1</title>
+    <script>
+        function numBit(n) {
+            if (n > 0 && n < 1000) {
+                var ed, des, sot;
+                ed = n % 10;
+                des = (Math.trunc(n / 10)) % 10;
+                sot = Math.trunc(n / 100);
+                console.log("единицы: " + ed + ",");
+                console.log("десятки: " + des + ",");
+                console.log("сотни: " + sot);
+            } else if (n >= 1000) {
+                console.log(" ");
+            }
+        }
+        var Num = new numBit(123);
+        console.log(Num);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
